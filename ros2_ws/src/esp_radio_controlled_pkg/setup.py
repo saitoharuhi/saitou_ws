@@ -24,7 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'image_reception_node = esp_radio_controlled_pkg.image_reception_node:main'
+            'image_reception_node = esp_radio_controlled_pkg.image_reception_node:main',
+            'control_node = esp_radio_controlled_pkg.control_node:main'
         ],
     },
 )

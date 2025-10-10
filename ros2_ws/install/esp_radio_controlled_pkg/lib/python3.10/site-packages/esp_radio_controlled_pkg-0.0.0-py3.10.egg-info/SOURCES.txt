@@ -9,6 +9,7 @@ setup.py
 ../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info/top_level.txt
 ../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info/zip-safe
 esp_radio_controlled_pkg/__init__.py
+esp_radio_controlled_pkg/control_node.py
 esp_radio_controlled_pkg/image_reception_node.py
 resource/esp_radio_controlled_pkg
 test/test_copyright.py
