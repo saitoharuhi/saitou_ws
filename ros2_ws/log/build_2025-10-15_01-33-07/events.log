@@ -1,0 +1,108 @@
+[0.000000] (-) TimerEvent: {}
+[0.002347] (esp_radio_controlled_pkg) JobQueued: {'identifier': 'esp_radio_controlled_pkg', 'dependencies': OrderedDict()}
+[0.002411] (esp_radio_controlled_pkg) JobStarted: {'identifier': 'esp_radio_controlled_pkg'}
+[0.099395] (-) TimerEvent: {}
+[0.201732] (-) TimerEvent: {}
+[0.303062] (-) TimerEvent: {}
+[0.404916] (-) TimerEvent: {}
+[0.506513] (-) TimerEvent: {}
+[0.607816] (-) TimerEvent: {}
+[0.709363] (-) TimerEvent: {}
+[0.810618] (-) TimerEvent: {}
+[0.911449] (-) TimerEvent: {}
+[1.012017] (-) TimerEvent: {}
+[1.113759] (-) TimerEvent: {}
+[1.215422] (-) TimerEvent: {}
+[1.317071] (-) TimerEvent: {}
+[1.418680] (-) TimerEvent: {}
+[1.520364] (-) TimerEvent: {}
+[1.622188] (-) TimerEvent: {}
+[1.723637] (-) TimerEvent: {}
+[1.824582] (-) TimerEvent: {}
+[1.925262] (-) TimerEvent: {}
+[2.026886] (-) TimerEvent: {}
+[2.129135] (-) TimerEvent: {}
+[2.234476] (-) TimerEvent: {}
+[2.335719] (-) TimerEvent: {}
+[2.438740] (-) TimerEvent: {}
+[2.540504] (-) TimerEvent: {}
+[2.642222] (-) TimerEvent: {}
+[2.743230] (-) TimerEvent: {}
+[2.844644] (-) TimerEvent: {}
+[2.946033] (-) TimerEvent: {}
+[3.047073] (-) TimerEvent: {}
+[3.147934] (-) TimerEvent: {}
+[3.249329] (-) TimerEvent: {}
+[3.350544] (-) TimerEvent: {}
+[3.451741] (-) TimerEvent: {}
+[3.553072] (-) TimerEvent: {}
+[3.654500] (-) TimerEvent: {}
+[3.755590] (-) TimerEvent: {}
+[3.856571] (-) TimerEvent: {}
+[3.957674] (-) TimerEvent: {}
+[4.059084] (-) TimerEvent: {}
+[4.160520] (-) TimerEvent: {}
+[4.261524] (-) TimerEvent: {}
+[4.362889] (-) TimerEvent: {}
+[4.463889] (-) TimerEvent: {}
+[4.564607] (-) TimerEvent: {}
+[4.665853] (-) TimerEvent: {}
+[4.766226] (-) TimerEvent: {}
+[4.866563] (-) TimerEvent: {}
+[4.883323] (esp_radio_controlled_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/esp_radio_controlled_pkg', 'build', '--build-base', '/home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/build', 'install', '--record', '/home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/altair/Documents/saitou_ws/ros2_ws/src/esp_radio_controlled_pkg', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'ja:en', 'USER': 'altair', 'LC_TIME': 'ja_JP.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'STM32CubeMX_PATH': '/home/altair/STM32CubeMX', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/altair', 'OLDPWD': '/home/altair/Documents/saitou_ws', 'TERM_PROGRAM_VERSION': '20240203-110809-5046fc22', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/org.wezfurlong.wezterm.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ja_JP.UTF-8', 'MANAGERPID': '1189', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'SYSTEMD_EXEC_PID': '1414', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3437', 'WEZTERM_EXECUTABLE': '/usr/bin/wezterm-gui', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/altair/Documents/saitou_ws/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'altair', 'JOURNAL_STREAM': '8:13041', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'altair', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WEZTERM_CONFIG_FILE': '/home/altair/.wezterm.lua', 'ROS_LOCALHOST_ONLY': '0', 'WEZTERM_EXECUTABLE_DIR': '/usr/bin', 'PATH': '/home/altair/spresenseenv/usr/bin:/opt/ros/humble/bin:/home/altair/.local/bin:/home/altair/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/altair/bin:/home/altair/bin', 'SESSION_MANAGER': 'local/altair-ThinkPad-L380:@/tmp/.ICE-unix/1385,unix/altair-ThinkPad-L380:/tmp/.ICE-unix/1385', 'INVOCATION_ID': '5e0a5f3cd4b048fa845de292d695d509', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ja_JP.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'DISPLAY': ':0', 'LANG': 'ja_JP.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ja_JP.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.XBSWD3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'WezTerm', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ja_JP.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ja_JP.UTF-8', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ja_JP.UTF-8', 'WEZTERM_CONFIG_DIR': '/home/altair', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'WEZTERM_UNIX_SOCKET': '/run/user/1000/wezterm/gui-sock-3437', 'PYTHONPATH': '/home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/lib/python3.10/site-packages:/home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ja_JP.UTF-8', 'LC_PAPER': 'ja_JP.UTF-8', 'WEZTERM_PANE': '1', 'COLCON': '1'}, 'shell': False}
+[4.966778] (-) TimerEvent: {}
+[5.067235] (-) TimerEvent: {}
+[5.168255] (-) TimerEvent: {}
+[5.268592] (-) TimerEvent: {}
+[5.369223] (-) TimerEvent: {}
+[5.471922] (-) TimerEvent: {}
+[5.572470] (-) TimerEvent: {}
+[5.673473] (-) TimerEvent: {}
+[5.774264] (-) TimerEvent: {}
+[5.875648] (-) TimerEvent: {}
+[5.934698] (esp_radio_controlled_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[5.976118] (-) TimerEvent: {}
+[6.068571] (esp_radio_controlled_pkg) StdoutLine: {'line': b'writing ../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info/PKG-INFO\n'}
+[6.069336] (esp_radio_controlled_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info/dependency_links.txt\n'}
+[6.069541] (esp_radio_controlled_pkg) StdoutLine: {'line': b'writing entry points to ../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info/entry_points.txt\n'}
+[6.069944] (esp_radio_controlled_pkg) StdoutLine: {'line': b'writing requirements to ../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info/requires.txt\n'}
+[6.070142] (esp_radio_controlled_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info/top_level.txt\n'}
+[6.076320] (-) TimerEvent: {}
+[6.177413] (-) TimerEvent: {}
+[6.266650] (esp_radio_controlled_pkg) StdoutLine: {'line': b"reading manifest file '../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info/SOURCES.txt'\n"}
+[6.277812] (-) TimerEvent: {}
+[6.280690] (esp_radio_controlled_pkg) StdoutLine: {'line': b"writing manifest file '../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info/SOURCES.txt'\n"}
+[6.282685] (esp_radio_controlled_pkg) StdoutLine: {'line': b'running build\n'}
+[6.284173] (esp_radio_controlled_pkg) StdoutLine: {'line': b'running build_py\n'}
+[6.285346] (esp_radio_controlled_pkg) StdoutLine: {'line': b'copying esp_radio_controlled_pkg/__init__.py -> /home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/build/lib/esp_radio_controlled_pkg\n'}
+[6.287269] (esp_radio_controlled_pkg) StdoutLine: {'line': b'copying esp_radio_controlled_pkg/image_reception_node.py -> /home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/build/lib/esp_radio_controlled_pkg\n'}
+[6.289218] (esp_radio_controlled_pkg) StdoutLine: {'line': b'copying esp_radio_controlled_pkg/control_node.py -> /home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/build/lib/esp_radio_controlled_pkg\n'}
+[6.292995] (esp_radio_controlled_pkg) StdoutLine: {'line': b'running install\n'}
+[6.350658] (esp_radio_controlled_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[6.377886] (-) TimerEvent: {}
+[6.439678] (esp_radio_controlled_pkg) StdoutLine: {'line': b'copying /home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/build/lib/esp_radio_controlled_pkg/image_reception_node.py -> /home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/lib/python3.10/site-packages/esp_radio_controlled_pkg\n'}
+[6.440518] (esp_radio_controlled_pkg) StdoutLine: {'line': b'byte-compiling /home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/lib/python3.10/site-packages/esp_radio_controlled_pkg/image_reception_node.py to image_reception_node.cpython-310.pyc\n'}
+[6.441434] (esp_radio_controlled_pkg) StdoutLine: {'line': b'running install_data\n'}
+[6.441917] (esp_radio_controlled_pkg) StdoutLine: {'line': b'copying resource/esp_radio_controlled_pkg -> /home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/share/ament_index/resource_index/packages\n'}
+[6.442248] (esp_radio_controlled_pkg) StdoutLine: {'line': b'copying package.xml -> /home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/share/esp_radio_controlled_pkg\n'}
+[6.442433] (esp_radio_controlled_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.478157] (-) TimerEvent: {}
+[6.578177] (esp_radio_controlled_pkg) StdoutLine: {'line': b"removing '/home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/lib/python3.10/site-packages/esp_radio_controlled_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[6.578356] (-) TimerEvent: {}
+[6.578543] (esp_radio_controlled_pkg) StdoutLine: {'line': b'Copying ../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info to /home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/lib/python3.10/site-packages/esp_radio_controlled_pkg-0.0.0-py3.10.egg-info\n'}
+[6.579539] (esp_radio_controlled_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[6.678508] (-) TimerEvent: {}
+[6.778918] (-) TimerEvent: {}
+[6.879340] (-) TimerEvent: {}
+[6.979957] (-) TimerEvent: {}
+[7.081288] (-) TimerEvent: {}
+[7.181612] (-) TimerEvent: {}
+[7.282337] (-) TimerEvent: {}
+[7.290040] (esp_radio_controlled_pkg) StdoutLine: {'line': b'Installing control_node script to /home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/lib/esp_radio_controlled_pkg\n'}
+[7.290936] (esp_radio_controlled_pkg) StdoutLine: {'line': b'Installing image_reception_node script to /home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/lib/esp_radio_controlled_pkg\n'}
+[7.291906] (esp_radio_controlled_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/install.log'\n"}
+[7.382867] (-) TimerEvent: {}
+[7.479069] (esp_radio_controlled_pkg) CommandEnded: {'returncode': 0}
+[7.487541] (-) TimerEvent: {}
+[7.513400] (esp_radio_controlled_pkg) JobEnded: {'identifier': 'esp_radio_controlled_pkg', 'rc': 0}
+[7.517120] (-) EventReactorShutdown: {}

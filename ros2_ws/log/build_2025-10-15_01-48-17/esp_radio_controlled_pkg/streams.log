@@ -1,0 +1,29 @@
+[7.263s] Invoking command in '/home/altair/Documents/saitou_ws/ros2_ws/src/esp_radio_controlled_pkg': PYTHONPATH=/home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/esp_radio_controlled_pkg build --build-base /home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/build install --record /home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/install.log --single-version-externally-managed install_data
+[8.664s] running egg_info
+[8.779s] writing ../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info/PKG-INFO
+[8.785s] writing dependency_links to ../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info/dependency_links.txt
+[8.789s] writing entry points to ../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info/entry_points.txt
+[8.792s] writing requirements to ../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info/requires.txt
+[8.796s] writing top-level names to ../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info/top_level.txt
+[9.171s] reading manifest file '../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info/SOURCES.txt'
+[9.175s] writing manifest file '../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info/SOURCES.txt'
+[9.177s] running build
+[9.178s] running build_py
+[9.181s] copying esp_radio_controlled_pkg/__init__.py -> /home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/build/lib/esp_radio_controlled_pkg
+[9.183s] copying esp_radio_controlled_pkg/image_reception_node.py -> /home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/build/lib/esp_radio_controlled_pkg
+[9.185s] copying esp_radio_controlled_pkg/control_node.py -> /home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/build/lib/esp_radio_controlled_pkg
+[9.189s] running install
+[9.219s] running install_lib
+[9.337s] copying /home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/build/lib/esp_radio_controlled_pkg/image_reception_node.py -> /home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/lib/python3.10/site-packages/esp_radio_controlled_pkg
+[9.340s] byte-compiling /home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/lib/python3.10/site-packages/esp_radio_controlled_pkg/image_reception_node.py to image_reception_node.cpython-310.pyc
+[9.342s] running install_data
+[9.342s] copying resource/esp_radio_controlled_pkg -> /home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/share/ament_index/resource_index/packages
+[9.343s] copying package.xml -> /home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/share/esp_radio_controlled_pkg
+[9.343s] running install_egg_info
+[9.452s] removing '/home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/lib/python3.10/site-packages/esp_radio_controlled_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[9.452s] Copying ../../build/esp_radio_controlled_pkg/esp_radio_controlled_pkg.egg-info to /home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/lib/python3.10/site-packages/esp_radio_controlled_pkg-0.0.0-py3.10.egg-info
+[9.454s] running install_scripts
+[10.145s] Installing control_node script to /home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/lib/esp_radio_controlled_pkg
+[10.145s] Installing image_reception_node script to /home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/lib/esp_radio_controlled_pkg
+[10.145s] writing list of installed files to '/home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/install.log'
+[10.313s] Invoked command in '/home/altair/Documents/saitou_ws/ros2_ws/src/esp_radio_controlled_pkg' returned '0': PYTHONPATH=/home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/altair/Documents/saitou_ws/ros2_ws/install/esp_radio_controlled_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/esp_radio_controlled_pkg build --build-base /home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/build install --record /home/altair/Documents/saitou_ws/ros2_ws/build/esp_radio_controlled_pkg/install.log --single-version-externally-managed install_data
