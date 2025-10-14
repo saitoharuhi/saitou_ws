@@ -28,8 +28,11 @@ const int motorPin1 = 2;
 const int motorPin2 = 3;
 
 // WiFi credentials
-const char *ssid = "SH 4835";
-const char *password = "haruhi55bbd";
+const char *ssid = "SSID-9188DF";
+const char *password = "3d67747b";
+
+extern void startCameraServer(void);
+
 
 void setup()
 {
@@ -102,6 +105,7 @@ void setup()
     }
 
     Serial.println("Camera ready! Use 'http://" + WiFi.localIP().toString() + "' to connect");
+    startCameraServer();  
 }
 
 void loop()
