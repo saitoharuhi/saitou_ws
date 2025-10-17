@@ -27,11 +27,11 @@ const int motorPin1 = 2;
 const int motorPin2 = 3;
 
 // WiFi credentials
-const char *ssid = "SSID-9188DF";
-const char *password = "3d67747b";
+const char *ssid = "S24";
+const char *password = "haruhi55bbd";
 
 // PC (ROS) server to send frames to
-const char *pc_ip = "192.168.151.94"; // Set to ROS PC IP
+const char *pc_ip = "10.50.100.180"; // Set to ROS PC IP
 const uint16_t pc_port = 5000;
 
 extern void startCameraServer(void);
@@ -124,6 +124,9 @@ void setup()
 
 void loop()
 {
+    static unsigned long lastLogTime = 0;
+    unsigned long currentTime = millis();
+
     // Non-blocking serial command handling
     if (Serial.available() > 0)
     {
@@ -135,29 +138,41 @@ void loop()
             // Move motor forward
             digitalWrite(motorPin1, HIGH);
             digitalWrite(motorPin2, LOW);
+            Serial.println("[LOG] Command 'w' received: Moving motor forward");
             break;
         case 's':
             // Move motor backward
             digitalWrite(motorPin1, LOW);
             digitalWrite(motorPin2, HIGH);
+            Serial.println("[LOG] Command 's' received: Moving motor backward");
             break;
         case 'a':
             // Turn servo to the left
             servo.write(45);
+            Serial.println("[LOG] Command 'a' received: Turning servo left");
             break;
         case 'd':
             // Turn servo to the right
             servo.write(135);
+            Serial.println("[LOG] Command 'd' received: Turning servo right");
             break;
         case 'q':
             // Stop motor
             digitalWrite(motorPin1, LOW);
             digitalWrite(motorPin2, LOW);
+            Serial.println("[LOG] Command 'q' received: Stopping motor");
             break;
         default:
-            Serial.println("Unknown command");
+            Serial.println("[LOG] Unknown command received");
             break;
         }
+    }
+
+    // Log communication status every 200ms (5 times per second)
+    if (currentTime - lastLogTime >= 200)
+    {
+        Serial.println("[LOG] Communication active");
+        lastLogTime = currentTime;
     }
 
     // Send camera frames to PC if connected

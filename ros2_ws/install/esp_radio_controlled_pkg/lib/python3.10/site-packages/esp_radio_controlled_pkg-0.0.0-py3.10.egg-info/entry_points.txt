@@ -1,3 +1,4 @@
 [console_scripts]
 control_node = esp_radio_controlled_pkg.control_node:main
 image_reception_node = esp_radio_controlled_pkg.image_reception_node:main
+
