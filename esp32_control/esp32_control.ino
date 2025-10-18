@@ -1,6 +1,7 @@
 #include <ESP32Servo.h> // 修正: ESP32用のライブラリを使用
 #include <WiFi.h>
 #include <esp_camera.h>
+#include <WiFiUdp.h>
 
 #define CAMERA_MODEL_XIAO_ESP32S3 // Has PSRAM
 
@@ -27,12 +28,16 @@ const int motorPin1 = 2;
 const int motorPin2 = 3;
 
 // WiFi credentials
-const char *ssid = "SkenWi-Fi";
-const char *password = "SkenWi-Fi2023";
+const char *ssid = "ABC";
+const char *password = "10101010";
 
 // PC (ROS) server to send frames to
-const char *pc_ip = "192.168.0.101"; // Set to ROS PC IP
+const char *pc_ip = "10.56.0.216"; // Set to ROS PC IP
 const uint16_t pc_port = 5000;
+
+// UDP control port (must match control_node.py)
+const uint16_t control_port = 5001;
+WiFiUDP udp;
 
 extern void startCameraServer(void);
 
@@ -60,6 +65,16 @@ void setup()
     Serial.println("WiFi connected");
     Serial.println("IP address: ");
     Serial.println(WiFi.localIP());
+
+    // Start UDP for control commands
+    if (udp.begin(control_port))
+    {
+        Serial.printf("UDP control listening on port %d\n", control_port);
+    }
+    else
+    {
+        Serial.printf("Failed to start UDP on port %d\n", control_port);
+    }
 
     // Debug: Check if PSRAM is enabled
     if (psramFound())
@@ -127,51 +142,58 @@ void loop()
     static unsigned long lastLogTime = 0;
     unsigned long currentTime = millis();
 
-    // Non-blocking serial command handling
-    if (Serial.available() > 0)
+    // UDP control handling (expects 8 bytes: two 32-bit signed ints, motor_value and servo_angle)
+    int packetSize = udp.parsePacket();
+    if (packetSize >= 8)
     {
-        char command = Serial.read();
-
-        switch (command)
+        uint8_t buf[8];
+        int len = udp.read(buf, 8);
+        if (len == 8)
         {
-        case 'w':
-            // Move motor forward
-            digitalWrite(motorPin1, HIGH);
-            digitalWrite(motorPin2, LOW);
-            Serial.println("[LOG] Command 'w' received: Moving motor forward");
-            break;
-        case 's':
-            // Move motor backward
-            digitalWrite(motorPin1, LOW);
-            digitalWrite(motorPin2, HIGH);
-            Serial.println("[LOG] Command 's' received: Moving motor backward");
-            break;
-        case 'a':
-            // Turn servo to the left
-            servo.write(60);
-            Serial.println("[LOG] Command 'a' received: Turning servo left");
-            break;
-        case 'd':
-            // Turn servo to the right
-            servo.write(70);
-            Serial.println("[LOG] Command 'd' received: Turning servo right");
-            break;
-        case 'q':
-            // Stop motor
-            digitalWrite(motorPin1, LOW);
-            digitalWrite(motorPin2, LOW);
-            Serial.println("[LOG] Command 'q' received: Stopping motor");
-            break;
-        default:
-            Serial.println("[LOG] Unknown command received");
-            break;
+            int32_t motor_value = 0;
+            int32_t servo_angle = 0;
+            memcpy(&motor_value, buf, 4);
+            memcpy(&servo_angle, buf + 4, 4);
+
+            Serial.printf("[LOG] UDP command received: motor=%d, servo=%d\n", motor_value, servo_angle);
+
+            // Motor control: positive -> forward, negative -> backward, zero -> stop
+            if (motor_value > 0)
+            {
+                digitalWrite(motorPin1, HIGH);
+                digitalWrite(motorPin2, LOW);
+            }
+            else if (motor_value < 0)
+            {
+                digitalWrite(motorPin1, LOW);
+                digitalWrite(motorPin2, HIGH);
+            }
+            else
+            {
+                digitalWrite(motorPin1, LOW);
+                digitalWrite(motorPin2, LOW);
+            }
+
+            // Servo control: directly write angle (ensure within 0-180)
+            if (servo_angle < 0)
+                servo_angle = 0;
+            if (servo_angle > 180)
+                servo_angle = 180;
+            servo.write(servo_angle);
+        }
+        else
+        {
+            // Drain packet if unexpected size
+            while (udp.available())
+                udp.read();
+            Serial.println("[WARN] Received unexpected UDP packet size for control");
         }
     }
 
     // Log communication status every 200ms (5 times per second)
     if (currentTime - lastLogTime >= 200)
     {
-        Serial.println("[LOG] Communication active");
+        // Serial.println("[LOG] Communication active");
         lastLogTime = currentTime;
     }
 
@@ -232,7 +254,7 @@ void loop()
         }
         else
         {
-            //Serial.printf("Sent frame %u bytes\n", len);
+            // Serial.printf("Sent frame %u bytes\n", len);
         }
 
         // Throttle frame rate
@@ -248,7 +270,7 @@ void loop()
         }
         else
         {
-            Serial.println("Reconnected to PC server");
+            // Serial.println("Reconnected to PC server");
         }
     }
 

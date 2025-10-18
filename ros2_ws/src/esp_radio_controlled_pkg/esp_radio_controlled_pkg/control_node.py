@@ -3,7 +3,7 @@ import struct
 
 def main():
     # ESP32のIPアドレスとポート番号
-    esp32_host = '192.168.0.102'  # ESP32のIPアドレスに置き換えてください
+    esp32_host = '10.56.0.250'  # ESP32のIPアドレスに置き換えてください
     esp32_port = 5001             # ESP32でリッスンするポート番号
 
     # UDPソケットの作成
