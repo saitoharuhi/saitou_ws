@@ -27,11 +27,11 @@ const int motorPin1 = 2;
 const int motorPin2 = 3;
 
 // WiFi credentials
-const char *ssid = "S24";
-const char *password = "haruhi55bbd";
+const char *ssid = "SkenWi-Fi";
+const char *password = "SkenWi-Fi2023";
 
 // PC (ROS) server to send frames to
-const char *pc_ip = "10.50.100.180"; // Set to ROS PC IP
+const char *pc_ip = "192.168.0.101"; // Set to ROS PC IP
 const uint16_t pc_port = 5000;
 
 extern void startCameraServer(void);
@@ -96,7 +96,7 @@ void setup()
     config.xclk_freq_hz = 20000000;
     config.pixel_format = PIXFORMAT_JPEG;
     config.frame_size = FRAMESIZE_QVGA; // 解像度をさらに低く設定 (例: QQVGA)
-    config.jpeg_quality = 10;           // JPEG品質をさらに低く設定
+    config.jpeg_quality = 20;           // JPEG品質をさらに低く設定
     config.fb_count = 1;                // フレームバッファ数を1に設定
 
     // Initialize the camera
@@ -148,12 +148,12 @@ void loop()
             break;
         case 'a':
             // Turn servo to the left
-            servo.write(45);
+            servo.write(60);
             Serial.println("[LOG] Command 'a' received: Turning servo left");
             break;
         case 'd':
             // Turn servo to the right
-            servo.write(135);
+            servo.write(70);
             Serial.println("[LOG] Command 'd' received: Turning servo right");
             break;
         case 'q':
@@ -232,7 +232,7 @@ void loop()
         }
         else
         {
-            Serial.printf("Sent frame %u bytes\n", len);
+            //Serial.printf("Sent frame %u bytes\n", len);
         }
 
         // Throttle frame rate
